@@ -1,0 +1,9 @@
+div{
+    border: 1em solid blue;
+    margin: 20px;
+    height: 300px;
+}
+
+.japan{
+    background-image: radial-gradient(circle, red 30%, white 30%);
+}
