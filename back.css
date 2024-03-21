@@ -1,0 +1,56 @@
+ul{
+    list-style-type: none;
+}
+
+li{
+    height: 300px;
+    width: 300px;
+    border: 5px solid crimson;
+    margin: 10px;
+}
+
+li:nth-of-type(even){
+    background-image: radial-gradient(circle, blue 40%, gold 40%);
+
+}
+
+li:nth-of-type(odd){
+    background-image: linear-gradient(to top, gold 20%, violet 20%);
+}
+
+li:first-of-type,li:last-of-type{
+    background-image: linear-gradient(-90deg, gold 20%, red 20%);
+}
+
+li:nth-of-type(3n+2){
+    background-image: repeating-linear-gradient(30deg, khaki 10%, tomato 12%, gold 14%);
+}
+
+li:nth-of-type(n+6){
+    background-image: -webkit-repeating-radial-gradient(circle, khaki 10%, tomato 12%, gold 14%);
+}
+
+li:nth-of-type(5){
+    background-image:url(./media/tree2.jpg),url(./media/tree2.jpg), url(./media/tree1.jpg);
+    background-size:50px,50px, cover;
+    background-repeat:repeat-x,repeat-y, no-repeat;
+}
+
+
+ul>:nth-child(4){
+    background-image:url(./media/tree1.jpg),url(./media/tree1.jpg), radial-gradient(circle, blue 40%, gold 40%);
+    ;
+
+    background-size: 100px, 100px, cover;
+
+    background-repeat: no-repeat;
+
+    background-position: bottom center, top right;
+}
+
+
+ul :nth-child(3){
+    background:  no-repeat;
+    background-image: url(./media/tree2.jpg),url(./media/tree2.jpg);
+    background-position:0 50px, 150px 170px;
+}
